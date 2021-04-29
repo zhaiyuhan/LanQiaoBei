@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"tim_ic\startup_stm32g431xx.o"
+"tim_ic\lcd.o"
+"tim_ic\main.o"
+"tim_ic\stm32g4xx_it.o"
+"tim_ic\stm32g4xx_hal_msp.o"
+"tim_ic\stm32g4xx_hal_tim.o"
+"tim_ic\stm32g4xx_hal_tim_ex.o"
+"tim_ic\stm32g4xx_hal_pwr_ex.o"
+"tim_ic\stm32g4xx_hal.o"
+"tim_ic\stm32g4xx_hal_rcc.o"
+"tim_ic\stm32g4xx_hal_rcc_ex.o"
+"tim_ic\stm32g4xx_hal_flash.o"
+"tim_ic\stm32g4xx_hal_flash_ex.o"
+"tim_ic\stm32g4xx_hal_flash_ramfunc.o"
+"tim_ic\stm32g4xx_hal_gpio.o"
+"tim_ic\stm32g4xx_hal_exti.o"
+"tim_ic\stm32g4xx_hal_dma.o"
+"tim_ic\stm32g4xx_hal_dma_ex.o"
+"tim_ic\stm32g4xx_hal_pwr.o"
+"tim_ic\stm32g4xx_hal_cortex.o"
+"tim_ic\stm32g4xx_hal_uart.o"
+"tim_ic\stm32g4xx_hal_uart_ex.o"
+"tim_ic\system_stm32g4xx.o"
+--library_type=microlib --strict --scatter "TIM_IC\TIM_IC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM_IC.map" -o TIM_IC\TIM_IC.axf
