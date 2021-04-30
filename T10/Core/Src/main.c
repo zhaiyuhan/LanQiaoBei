@@ -230,7 +230,7 @@ void Key_Proc()
 		b2_sum++;
 		if(b2_sum == 1)
 		{
-			if(ViewModel == SETTINGVIEW)
+			if(ViewModel == SETTINGVIEW)			
 				Setting_Index = Setting_Index % 4 + 1;		
 		}
 	}else if(KB2 == 1)
@@ -390,7 +390,7 @@ int main(void)
 	//¹Ø±ÕLED
 	TurnOff_LEDS();
   /* USER CODE END 2 */
-	
+	HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
 	HAL_TIM_Base_Start_IT(&htim4);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

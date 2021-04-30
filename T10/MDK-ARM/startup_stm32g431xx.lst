@@ -671,7 +671,7 @@ ARM Macro Assembler    Page 11
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=t10\startup_stm32g431xx.d -ot10\startup_stm32g431xx.o -I.\RT
 E\_T10 -IC:\Users\zhaiy\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Incl
-ude -IC:\Users\zhaiy\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\C
+ude -IC:\Users\zhaiy\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.3.0\Drivers\C
 MSIS\Device\ST\STM32G4xx\Include --predefine="__MICROLIB SETA 1" --predefine="_
 _UVISION_VERSION SETA 533" --predefine="_RTE_ SETA 1" --predefine="STM32G431xx 
 SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32g431xx.lst startup_stm32
