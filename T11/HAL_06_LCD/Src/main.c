@@ -151,7 +151,7 @@ void Display_Proc()
 			break;
 	}
 }
-
+//ADC均值滤波
 float Adc_Proc(uint32_t _buf[])
 {
 	uint8_t i, j;
@@ -333,9 +333,9 @@ int main(void)
 				__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
 				__HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, 0);
 			}else{
-				
-				__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 110);
-				__HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, 110);
+				//占空比拉满设置成高电平
+				__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 100);
+				__HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, 100);
 			}
 		}
 		
